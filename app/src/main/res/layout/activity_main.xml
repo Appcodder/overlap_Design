@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
-        
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,6 +20,32 @@
                 android:layout_height="200dp"
                 app:cardCornerRadius="20dp"
                 app:cardBackgroundColor="#F7673AB7">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Smart TV"
+                        android:layout_above="@id/tvdevice"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvdevice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Active Device"
+                        android:textColor="@color/black"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_margin="10dp"/>
+
+                </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
